@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace GastosResidenciais.Api.Models;
 
 public enum TipoTransacao
@@ -14,5 +16,7 @@ public class Transacao
     public TipoTransacao Tipo { get; set; }
 
     public int PessoaId { get; set; }
+
+    [JsonIgnore]
     public Pessoa? Pessoa { get; set; }
 }

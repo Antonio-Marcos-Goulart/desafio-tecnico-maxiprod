@@ -4,6 +4,8 @@ backend/**/obj/
 
 # Banco de dados SQLite gerado em tempo de execução
 backend/**/*.db
+backend/**/*.db-shm
+backend/**/*.db-wal
 
 # Node.js / Vite (front-end) - dependências e build geradas automaticamente
 frontend/node_modules/
